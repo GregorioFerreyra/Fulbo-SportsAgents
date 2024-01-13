@@ -1,0 +1,9 @@
+[
+    {"producto": "Traje All Black", "precio": 30000, "id": 1},
+    {"producto": "Traje Gray", "precio": 30000, "id": 2},
+    {"producto": "Traje Blue Lines", "precio": 30000, "id": 3},
+    {"producto": "Traje Black Smoking", "precio": 50000, "id": 4},
+    {"producto": "Traje Chiche", "precio": 25000, "id": 5},
+    {"producto": "Traje Gray Black", "precio": 35000, "id": 6}
+
+]

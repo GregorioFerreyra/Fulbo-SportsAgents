@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fulbo sports agents - Jugadores </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo/B (1).png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html"><strong>Inicio</strong></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./jugadores.html"><strong>Jugadores</strong></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="deportesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <strong>Deportes</strong>  
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="deportesDropdown">
+                                <a class="dropdown-item" href="./futbol.html">Fútbol</a>
+                                <a class="dropdown-item" href="./rugby.html">Rugby</a>
+                                <a class="dropdown-item" href="./basket.html">Basket</a>
+                                <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Tenis</a>
+                            </div>
+                          </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html"><strong>Tienda</strong></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./conversor.html"><strong>Conversor de Monedas</strong></a>
+                          </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card" id="recuadro-form">
+                    <div class="card-header">
+                        <h4 class="text-center">Registro de Jugador</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="formularioJugador">
+                            <div class="form-group mt-2">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre"
+                                    required>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido"
+                                    placeholder="Ingrese su apellido" required>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="edad">Edad:</label>
+                                <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="deporte">Deporte:</label>
+                                <select class="form-control" id="deporte" required>
+                                    <option value="" disabled selected>Seleccione un deporte</option>
+                                    <option value="futbol">Fútbol</option>
+                                    <option value="rugby">Rugby</option>
+                                    <option value="tenis">Tenis</option>
+                                    <option value="basket">Basket</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="form-group mt-2">
+                                <label for="foto">Foto:</label>
+                                <input type="file" class="form-control" id="foto" accept="image/*">
+                            </div>
+
+                            <div class="form-group mt-2">
+                                <label for="valor">Valor de Mercado (U$D):</label>
+                                <input type="number" class="form-control" id="valor"
+                                    placeholder="Ingrese el valor de mercado" required>
+                            </div>
+                            <button type="button" class="btn btn-block mt-4" id="addplayer">Registrar Jugador</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card" id="recuadro-form2">
+                    <div class="card-header">
+                        <h4 class="text-center">Lista de jugadores por deporte</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="deporte">Deporte:</label>
+                                <select class="form-control" id="deporte-consulta" required>
+                                    <option value="" disabled selected>Seleccione un deporte</option>
+                                    <option value="futbol">Fútbol</option>
+                                    <option value="rugby">Rugby</option>
+                                    <option value="tenis">Tenis</option>
+                                    <option value="basket">Basket</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-block mt-4" id="findplayer">Ver Jugadores</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h4 class="text-center">Lista de Jugadores</h4>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Deporte</th>
+                    <th>Valor Mercado (U$D)</th>
+                </tr>
+            </thead>
+            <tbody id="tablaJugadoresBody"></tbody>
+        </table>
+    </div>
+
+    <script src="../index.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

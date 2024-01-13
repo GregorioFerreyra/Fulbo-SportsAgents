@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tienda Fulbo</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+
+    <link rel="stylesheet" href="../css/elegante.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo/B (1).png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html"><strong>Inicio</strong></a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./jugadores.html"><strong>Jugadores</strong></a>
+                  </li>
+
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="deportesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <strong>Deportes</strong>  
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="deportesDropdown">
+                        <a class="dropdown-item" href="./futbol.html">Fútbol</a>
+                        <a class="dropdown-item" href="./rugby.html">Rugby</a>
+                        <a class="dropdown-item" href="./basket.html">Basket</a>
+                        <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Tenis</a>
+                    </div>
+                  </li>
+
+
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./tienda.html"><strong>Tienda</strong></a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./conversor.html"><strong>Conversor de Monedas</strong></a>
+                  </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+   
+    <div class="titulo-tienda">
+        <h1>Tienda Fulbo</h1>
+    </div>
+
+        <!-- Carrito -->
+        <div class="icono-carrito" id="carrito-container">
+            <i class='bx bx-cart bx-md bx-border-circle bx-tada-hover' id="carrito"></i>
+            <div id="carrito-popup" class="carrito-popup">
+                <div id="carrito-content">
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Card 1 -->
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../images/traje all black.webp" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Card 2 -->
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../images/traje gris.webp" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Card 3 -->
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../images/traje azul.webp" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../images/smoking.webp" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 5 -->
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../images/buzo tipo golf.webp" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../images/saco gris.webp" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+    <div id="listado"></div>
+   
+    <footer class="tienda-fulbo-footer">
+        <p>&copy; Tienda Fulbo</p>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../tienda.js"></script>
+
+</body>
+</html>
