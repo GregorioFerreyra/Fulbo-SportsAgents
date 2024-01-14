@@ -97,7 +97,7 @@
 /***********************************Fetch de Ruta Relativa para las cards ********************/
 
 
-        fetch('./ecommerce.json')
+        fetch('./data/ecommerce.json')
             .then((response) => response.json())
             .then((data) => {
                 data.forEach((product, index) => {
